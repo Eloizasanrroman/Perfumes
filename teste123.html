@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Melly</title>
+
+    <!-- Link da biblioteca de ícones Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Fonte para o nome luxuoso "San Melly" -->
+    <link href="https://fonts.googleapis.com/css2?family=Merienda+One&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #fff;
+        }
+
+        /* Barra superior */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+        }
+
+        header .logo h1 {
+            font-size: 32px;
+            font-family: 'Playfair Display', serif;
+            color: #fff;  /* Cor branca como estava antes */
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        header .menu-icons {
+            display: flex;
+            gap: 20px;
+            font-size: 20px;
+        }
+
+        header .menu-icons i {
+            color: #fff;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        header .menu-icons i:hover {
+            color: #ccc;
+        }
+
+        /* Nova escrita "San Melly" em preto, maior e estilosa */
+        .main-logo {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .main-logo h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 60px;
+            color: #000;  /* Cor preta */
+            font-weight: 700;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        /* Galeria de Joias */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 40px;
+        }
+
+        .gallery .item {
+            text-align: center;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fdfdfd;
+            transition: transform 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery .item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery .item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .gallery .item p {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .gallery .item p:first-of-type {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .gallery .item button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s ease;
+        }
+
+        .gallery .item button:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra superior -->
+    <header>
+        <div class="logo">
+            <h1>San Melly</h1>  <!-- Nome "San Melly" branco na barra superior -->
+        </div>
+        <div class="menu-icons">
+            <i class="fas fa-bars" title="Menu"></i>
+            <i class="fas fa-user" title="Meu Perfil"></i>
+            <i class="fas fa-bell" title="Notificações"></i>
+        </div>
+    </header>
+
+    <!-- Nova escrita "San Melly" em preto abaixo da barra superior -->
+    <div class="main-logo">
+        <h1>San Melly</h1> <!-- Nome estilizado, maior e em preto -->
+    </div>
+
+    <!-- Galeria de joias -->
+    <div class="gallery">
+        <!-- Repita esse bloco para cada joia -->
+        <div class="item">
+            <img src="https://thumbs.dreamstime.com/b/fotografia-de-produtos-luxo-com-cores-escuras-baixas-garrafa-perfume-sobre-fundo-%C3%A1gua-beleza-e-cosm%C3%A9ticos-316560133.jpg" alt="Joia 1">
+            <p>Joia 1</p>
+            <p>R$ 150,00</p>
+            <button>Comprar</button>
+        </div>
+        <div class="item">
+            <img src="https://img.freepik.com/fotos-premium/fotografia-de-um-frasco-de-perfume-com-luz-de-flash-localizado-no-tronco-de-uma-floresta-umida-conceito-de-fotografia-de-perfume-e-cuidados-pessoais_22736-2444.jpg" alt="Joia 2">
+            <p>Joia 2</p>
+            <p>R$ 200,00</p>
+            <button>Comprar</button>
+        </div>
+        <div class="item">
+            <img src="https://thumbs.dreamstime.com/b/homens-de-luxo-perfume-em-garrafa-sobre-mesa-cinzenta-contra-fundo-escuro-gerado-por-ai-352604200.jpg" alt="Joia 3">
+            <p>Joia 3</p>
+            <p>R$ 180,00</p>
+            <button>Comprar</button>
+        </div>
+        <div class="item">
+            <img src="https://png.pngtree.com/thumb_back/fh260/background/20230425/pngtree-flower-plant-book-lady-perfume-photography-advertising-background-image_2457932.jpg" alt="Joia 4">
+            <p>Joia 4</p>
+            <p>R$ 250,00</p>
+            <button>Comprar</button>
+        </div>
+        <div class="item">
+            <img src="https://png.pngtree.com/background/20230425/original/pngtree-forest-tree-leaves-light-and-shadow-effect-perfume-bottle-photography-advertising-picture-image_2477536.jpg" alt="Joia 5">
+            <p>Joia 5</p>
+            <p>R$ 300,00</p>
+            <button>Comprar</button>
+        </div>
+        <div class="item">
+            <img src="https://png.pngtree.com/thumb_back/fh260/background/20230425/pngtree-plant-book-lady-perfume-bottle-fashion-photography-advertising-background-image_2457925.jpg" alt="Joia 6">
+            <p>Joia 6</p>
+            <p>R$ 350,00</p>
+            <button>Comprar</button>
+        </div>
+        <div class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyffaqIjZ_p1H3cAg9_b9HZP-4kCFCCmHKEEsRdoZyoGPIdDTfnmYt49Md1azvNncwPWc&usqp=CAU" alt="Joia 7">
+            <p>Joia 7</p>
+            <p>R$ 400,00</p>
+            <button>Comprar</button>
+        </div>
+        <div class="item">
+            <img src="https://png.pngtree.com/background/20230425/original/pngtree-perfume-bottle-plant-leaves-light-effect-photography-advertising-background-picture-image_2477462.jpg" alt="Joia 8">
+            <p>Joia 8</p>
+            <p>R$ 500,00</p>
+            <button>Comprar</button>
+        </div>
+        <div class="item">
+            <img src="https://png.pngtree.com/thumb_back/fw800/background/20230425/pngtree-light-and-shadow-special-effects-plant-perfume-bottle-photography-background-image_2458146.jpg" alt="Joia 9">
+            <p>Joia 9</p>
+            <p>R$ 450,00</p>
+            <button>Comprar</button>
+        </div>
+        <div class="item">
+            <img src="https://img.freepik.com/fotos-premium/mockup-embalaje-botella-perfume-piedra-fondo-arbol_620683-149.jpg" alt="Joia 10">
+            <p>Joia 10</p>
+            <p>R$ 600,00</p>
+            <button>Comprar</button>
+        </div>
+        <div class="item">
+            <img src="https://img.freepik.com/fotos-premium/fotografia-de-um-frasco-de-perfume-com-luz-de-flash-localizado-no-tronco-de-uma-floresta-umida-conceito-de-fotografia-de-perfume-e-cuidados-pessoais_22736-2442.jpg" alt="Joia 11">
+            <p>Joia 11</p>
+            <p>R$ 650,00</p>
+            <button>Comprar</button>
+        </div>
+        <div class="item">
+            <img src="https://img.freepik.com/fotos-premium/ilustracao-3d-de-perfume-de-maquete-e-recipiente-de-beleza-no-conceito-de-demonstracao-de-sombra-ao-ar-livre-de_939555-1079.jpg" alt="Joia 12">
+            <p>Joia 12</p>
+            <p>R$ 700,00</p>
+            <button>Comprar</button>
+        </div>
+    </div>
+
+</body>
+</html>
